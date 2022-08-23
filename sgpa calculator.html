@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:darkslategray ;">
+    <div style="display:inline-block;background-color:aqua;padding:30px;margin-left:500px;margin-top: 100px;border-radius: 50px;">
+        <h1 style="text-align: center;">SGPA/CGPA calculator</h1>
+        <p>enter grade points scored</p>
+        <p>subject points</p>
+        <div style="display: inline-block;padding-left:90px;">grades scored</div>
+        <div style="display:inline-block ;padding-left:50px;margin-bottom:15px">maximum points</div><br>
+        <label>subject1</label>
+        <input type="text" id="sub1text"></input>
+        <input type="number" max="3" min="0" id="sub1number" style="margin-left: 20px;border-radius: 8px;margin-bottom: 5px;border-color: black;"></input>
+        <br>
+        <label>subject2</label>
+        <input type="text" id="sub2text"></input>
+        <input type="number" max="3" min="0" id="sub2number" style="margin-left: 20px;border-radius: 8px;margin-bottom: 5px;border-color: black;"></input>
+        <br>
+        <label>subject3</label>
+        <input type="text" id="sub3text"></input>
+        <input type="number" max="3" min="0" id="sub3number" style="margin-left: 20px;border-radius: 8px;margin-bottom: 5px;border-color: black;"></input>
+        <br>
+        <label>subject4</label>
+        <input type="text" id="sub4text"></input>
+        <input type="number" max="3" min="0" id="sub4number" style="margin-left: 20px;border-radius: 8px;margin-bottom: 5px;border-color: black;"></input>
+        <br>
+        <label>subject5</label>
+        <input type="text" id="sub5text"></input>
+        <input type="number" max="3" min="0" id="sub5number" style="margin-left: 20px;border-radius: 8px;margin-bottom: 5px;border-color: black;"></input>
+        <br>
+        <label>subject6</label>
+        <input type="text" id="sub6text"></input>
+        <input type="number" max="3" min="0" id="sub6number" style="margin-left: 20px;border-radius: 8px;margin-bottom: 5px;border-color: black;"></input>
+        <br>
+        <label>subject7</label>
+        <input type="text" id="sub7text"></input>
+        <input type="number" max="3" min="0" id="sub7number" style="margin-left: 20px;border-radius: 8px;margin-bottom: 5px;border-color: black;"></input>
+        <br>
+        <label>subject8</label>
+        <input type="text" id="sub8text"></input>
+        <input type="number" max="3" min="0" id="sub8number" style="margin-left: 20px;border-radius: 8px;margin-bottom: 5px;border-color: black;"></input>
+        <br>
+        <button id="submit" style="margin-left:200px;margin-top:20px;background-color:chartreuse;border-color: chartreuse;">submit</button>
+        <h1 style="text-align:center" id="result"></h1>
+    </div>
+    <script>
+        let s=document.getElementById("submit").onclick = function(){
+            let a = String(document.getElementById("sub1text").value);
+            console.log(a);
+            let b = Number(document.getElementById("sub1number").value);
+            console.log(b);
+            let c = document.getElementById("sub2text").value;
+            console.log(c);
+            let d = Number(document.getElementById("sub2number").value);
+            console.log(d);
+            let e = document.getElementById("sub3text").value;
+            console.log(e);
+            let f = Number(document.getElementById("sub3number").value);
+            console.log(f);
+            let g = document.getElementById("sub4text").value;
+            console.log(g);
+            let h = Number(document.getElementById("sub4number").value);
+            console.log(h);
+            let i = document.getElementById("sub5text").value;
+            console.log(i);
+            let j = Number(document.getElementById("sub5number").value);
+            console.log(j);
+            let k = document.getElementById("sub6text").value;
+            console.log(k);
+            let l = Number(document.getElementById("sub6number").value);
+            console.log(l);
+            let m = document.getElementById("sub7text").value;
+            console.log(m);
+            let n = Number(document.getElementById("sub7number").value);
+            console.log(n);
+            let o = document.getElementById("sub8text").value;
+            console.log(o);
+            let p = Number(document.getElementById("sub8number").value);
+            console.log(p);
+            if(a == "A+"|| a == "a+"){
+                var a1=10;
+            }
+            else if(a == "a" || a=="A"){
+                var a1=9;
+            }
+            else if(a =="b" || a=="B"){
+                var a1=8;
+            }
+            else if(a =="c" || a=="C"){
+                var a1=7;
+            }
+            else if(a =="D" || a=="d"){
+                var a1=6;
+            }
+            else if(a =="e" || a=="E"){
+                var a1=5;
+            }
+            else if(a =="f" || a=="F"){
+                var a1=0;
+            }
+            else{
+                var a1=0;
+            }
+            if(c =="A+" || c=="a+"){
+                var c1=10;
+            }
+            else if(c =="a" || c=="A"){
+                var c1=9;
+            }
+            else if(c =="b" || c=="B"){
+                var c1=8;
+            }
+            else if(c =="c" || c== "C"){
+                var c1=7;
+            }
+            else if(c =="D" || c=="d"){
+                var c1=6;
+            }
+            else if(c =="e" || c=="E"){
+                var c1=5;
+            }
+            else if(c =="f" || c=="F"){
+                var c1=0;
+            }
+            else{
+                var c1=0;
+            }
+            if(e =="A+" || e=="a+"){
+                var e1=10;
+            }
+            else if(e =="a" || e=="A"){
+                var e1=9;
+            }
+            else if(e =="b" || e=="B"){
+                var e1=8;
+            }
+            else if(e =="c" || e=="C"){
+                var e1=7;
+            }
+            else if(e =="D" || e=="d"){
+                var e1=6;
+            }
+            else if(e =="e" || e=="E"){
+                var e1=5;
+            }
+            else if(e =="f" || e=="F"){
+                var e1=0;
+            }
+            else{
+                var e1=0;
+            }
+            if(g =="A+" || g=="a+"){
+                var g1=10;
+            }
+            else if(g =="a" || g=="A"){
+                var g1=9;
+            }
+            else if(g =="b" || g=="B"){
+                var g1=8;
+            }
+            else if(g =="c" || g=="C"){
+                var g1=7;
+            }
+            else if(g =="D" || g=="d"){
+                var g1=6; 
+            }
+            else if(g =="e" || g=="E"){
+                var g1=5;
+            }
+            else if(g =="f" || g=="F"){
+                var g1=0;
+            }
+            else{
+                var g1=0;
+            }
+            if(i =="A+" || i=="a+"){
+                var i1=10;
+            }
+            else if(i =="a" || i=="A"){
+                var i1=9;
+            }
+            else if(i =="b" || i=="B"){
+                var i1=8;
+            }
+            else if(i =="c" || i=="C"){
+                var i1=7;
+            }
+            else if(i=="D" || i=="d"){
+                var i1=6;
+            }
+            else if(i =="e" || i=="E"){
+                var i1=5;
+            }
+            else if(i =="f" || i=="F"){
+                var i1=0;
+            }
+            else{
+                var i1=0;
+            }
+            if(k =="A+" || k=="a+"){
+                var k1=10;
+            }
+            else if(k =="a" || k=="A"){
+                var k1=9;
+            }
+            else if(k =="b" || k=="B"){
+                var k1=8;
+            }
+            else if(k =="c" || k=="C"){
+                var k1=7;
+            }
+            else if(k=="D" || k=="d"){
+                var k1=6;
+            }
+            else if(k =="e" || k=="E"){
+                var k1=5;
+            }
+            else if(k =="f" || k=="F"){
+                var k1=0;
+            }
+            else{
+                var k1=0;
+            }
+            if(m =="A+" || m=="a+"){
+                var m1=10;
+            }
+            else if(m =="a" || m=="A"){
+                var m1=9;
+            }
+            else if(m =="b" || m=="B"){
+                var m1=8;
+            }
+            else if(m =="c" || m=="C"){
+                var m1=7;
+            }
+            else if(m=="D" || m=="d"){
+                var m1=6;
+            }
+            else if(m =="e" || m=="E"){
+                var m1=5;
+            }
+            else if(m =="f" || m=="F"){
+                var m1=0;
+            }
+            else{
+                var m1=0;
+            }
+            if(o =="A+" || o=="a+"){
+                var o1=10;
+            }
+            else if(o =="a" || o=="A"){
+                var o1=9;
+            }
+            else if(o =="b" || o=="B"){
+                var o1=8;
+            }
+            else if(o =="c" || o=="C"){
+                var o1=7;
+            }
+            else if(o=="D" || o=="d"){
+                var o1=6;
+            }
+            else if(o =="e" || o=="E"){
+                var o1=5;
+            }
+            else if(o =="f" || o=="F"){
+                var o1=0;
+            }
+            else{
+                var o1=0;
+            }
+            function cgpa(){
+                sum=0;
+                sum=sum+(a1*b)+(c1*d)+(e1*f)+(g1*h)+(i1*j)+(k1*l)+(m1*n)+(o1*p);
+                console.log(sum);
+                denom=(b+d+f+h+j+l+n+p);
+                console.log(denom);
+                cgpa=sum/denom;
+                console.log(cgpa);
+                return cgpa;
+            }
+            console.log(a1);
+            console.log(c1);
+            console.log(e1);
+            console.log(g1);
+            console.log(i1);
+            console.log(k1);
+            console.log(m1);
+            console.log(o1);
+            let r=cgpa();
+            document.getElementById("result").innerHTML="SGPA: "+r;
+        }
+    </script>
+</body>
+</html>
